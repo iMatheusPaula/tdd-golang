@@ -1,8 +1,6 @@
 package interaction
 
-const quantityToRepeat = 6
-
-func Interaction(character string) string {
+func Interaction(character string, quantityToRepeat int) string {
 	var result string
 	for i := 0; i < quantityToRepeat; i++ {
 		result += character
