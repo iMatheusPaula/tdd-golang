@@ -10,3 +10,9 @@ func TestInteraction(t *testing.T) {
 		t.Errorf("expect %s, got %s", expect, interaction)
 	}
 }
+
+func BenchmarkInteraction(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		Interaction("a")
+	}
+}

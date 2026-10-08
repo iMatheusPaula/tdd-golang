@@ -1,6 +1,6 @@
 package interaction
 
-const quantityToRepeat = 5
+const quantityToRepeat = 6
 
 func Interaction(character string) string {
 	var result string
