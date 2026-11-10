@@ -42,12 +42,13 @@ func TestAreaTDT(t *testing.T) {
 	}{
 		{form: Retangle{Length: 12.0, Width: 6.0}, expected: 72.0},
 		{form: Circle{Radius: 10}, expected: 314.1592653589793},
+		{form: Triangle{12, 6}, expected: 36.0},
 	}
 
 	for _, test := range testsArea {
 		result := test.form.Area()
 		if result != test.expected {
-			t.Errorf("got %.2f want %.2f", result, test.expected)
+			t.Errorf("%#v result: %.2f expected: %.2f", test.form, result, test.expected)
 		}
 	}
 }
